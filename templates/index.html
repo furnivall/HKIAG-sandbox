@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HKIAG Sandbox</title>
+</head>
+<body>
+<h1>Welcome to the HKIAG Web Sandbox</h1>
+<h3>This is the skeleton index page. Feel free to alter this if you desire, but please preserve the links below so everyone can get to their own subpages easily</h3>
+<ul>
+    {% for key, value in data %}
+        <li><a href={{ value }}>{{ key }}</a></li>
+    {% endfor %}
+</ul>
+</body>
+</html>

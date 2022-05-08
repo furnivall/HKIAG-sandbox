@@ -15,7 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from djangoProject import views
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.index, name='index'),
+    path('danny/', views.danny, name='danny'),
+    path('rhanoct/', views.rhanoct, name='rhanoct'),
+    path('saph/', views.saph, name='saph'),
+    path('fenix/', views.fenix, name='fenix'),
+    path('faolin/', views.faolin, name='faolin'),
 ]
